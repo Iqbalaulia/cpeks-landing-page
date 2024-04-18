@@ -1,0 +1,11 @@
+.review_carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.review_carousel :global(.react-multi-carousel-dot-list) {
+  position: relative;
+  align-self: center;
+  margin-top: 32px;
+}
