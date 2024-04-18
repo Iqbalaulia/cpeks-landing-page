@@ -353,6 +353,10 @@ option {
   justify-content: center;
 }
 
+.react-multiple-carousel__arrow {
+  z-index: 0 !important;
+}
+
 .heru {
   background: linear-gradient(to left bottom, #b9cffd 0%, #d0d2fe 100%);
 }
