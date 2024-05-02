@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import Image from "next/image";
 import { Logo } from "@/public/images";
 import {
@@ -12,7 +12,6 @@ import {
   NavStripeResponsive,
   NavUpArrow,
 } from "@/public/icons/micro-component";
-import useIsMounted from "@/app/hooks/useIsMounted";
 
 interface NavbarProps {
   mainNavigation: {
@@ -32,8 +31,12 @@ export const Navbar: FC<NavbarProps> = (props) => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [showChildren, setShowChildren] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  const isMounted = useIsMounted();
+  const [closeNav, setCloseNav] = useState(false);
 
+  useEffect(() => {
+    const isDesktop = window.innerWidth > 768; 
+    setShowNav(!isDesktop); 
+  }, []);
 
   const handleMouseEnter = (title: string) => {
     setHoveredItem(title);
@@ -47,11 +50,11 @@ export const Navbar: FC<NavbarProps> = (props) => {
 
   const changeNavMobile = () => {
     setShowNav((prevShowNav) => !prevShowNav);
-    
   };
 
   const handleCloseButtonClick = () => {
     setShowNav(false);
+    setCloseNav(true);
   };
 
   return (
@@ -73,6 +76,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
                 key={idx}
                 className="hover:text-[#7ED4F2] font-light hover:font-medium transition-all flex relative py-8"
                 onMouseEnter={() => handleMouseEnter(item.title)}
+                onMouseLeave={() => handleMouseLeave()}
                 onClick={() => handleMouseEnter(item.title)}
               >
                 <p
@@ -203,7 +207,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
       </nav>
       <div
         className={`${
-          !isMounted.current ? "hidden" : showNav ? "fadeIn" : "fadeOut"
+          !showNav && !closeNav ? "hidden" : showNav && !closeNav ? "fadeIn" : "fadeOut"
         } w-[375px] h-screen bg-primary-blue fixed z-50 top-0 right-0 p-5`}
       >
         <div className="bg-[#DCE0FD] w-full h-full rounded-2xl p-5">
