@@ -151,7 +151,7 @@ export default function About() {
                     <p className="font-semibold text-[#7855FF] text-[clamp(1.25rem,1.176rem+0.316vw,1.5rem)]">
                       {content.word}
                     </p>
-                    <p className="font-proxima-nova-400 text-[clamp(0.875rem,0.801rem+0.316vw,1.125rem)] leading-normal flex-grow">
+                    <p className="font-proxima-nova-400 text-[clamp(0.875rem,0.801rem+0.316vw,1.125rem)] leading-[1.4] flex-grow">
                       {content.description}
                     </p>
                   </div>

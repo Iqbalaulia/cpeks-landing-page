@@ -34,22 +34,22 @@ const OurPartners = (props: Props) => {
           </p>
         </div>
         <div className="col-span-1 lg:col-span-7 grid grid-cols-2 lg:grid-cols-4 place-items-center gap-x-20 gap-y-8 *:py-3">
-          <Image alt="brand icon" src={shopifyIcon} />
-          <Image alt="brand icon" src={reactIcon} />
-          <Image alt="brand icon" src={ajaxIcon} />
-          <Image alt="brand icon" src={javascriptIcon} />
-          <Image alt="brand icon" src={prestashopIcon} />
-          <Image alt="brand icon" src={figmaIcon} />
-          <Image alt="brand icon" src={awsIcon} />
-          <Image alt="brand icon" src={jsonIcon} />
-          <Image alt="brand icon" src={pythonIcon} />
-          <Image alt="brand icon" src={jqueryIcon} />
-          <Image alt="brand icon" src={symfonyIcon} />
-          <Image alt="brand icon" src={aiIcon} />
-          <Image alt="brand icon" src={bootstrapIcon} />
-          <Image alt="brand icon" src={wordpressIcon} />
-          <Image alt="brand icon" src={phpIcon} />
-          <Image alt="brand icon" src={photoshopIcon} />
+          <Image className="img-partners" alt="brand icon" src={shopifyIcon} />
+          <Image className="img-partners" alt="brand icon" src={reactIcon} />
+          <Image className="img-partners" alt="brand icon" src={ajaxIcon} />
+          <Image className="img-partners" alt="brand icon" src={javascriptIcon} />
+          <Image className="img-partners" alt="brand icon" src={prestashopIcon} />
+          <Image className="img-partners" alt="brand icon" src={figmaIcon} />
+          <Image className="img-partners" alt="brand icon" src={awsIcon} />
+          <Image className="img-partners" alt="brand icon" src={jsonIcon} />
+          <Image className="img-partners" alt="brand icon" src={pythonIcon} />
+          <Image className="img-partners" alt="brand icon" src={jqueryIcon} />
+          <Image className="img-partners" alt="brand icon" src={symfonyIcon} />
+          <Image className="img-partners" alt="brand icon" src={aiIcon} />
+          <Image className="img-partners" alt="brand icon" src={bootstrapIcon} />
+          <Image className="img-partners" alt="brand icon" src={wordpressIcon} />
+          <Image className="img-partners" alt="brand icon" src={phpIcon} />
+          <Image className="img-partners" alt="brand icon" src={photoshopIcon} />
         </div>
       </div>
     </div>
