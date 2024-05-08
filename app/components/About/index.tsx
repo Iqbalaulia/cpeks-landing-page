@@ -141,7 +141,7 @@ export default function About() {
               {cardContent.map((content) => (
                 <div
                   key={content.title}
-                  className="about-card p-[clamp(1rem,0.852rem+0.632vw,1.5rem)] max-h-fit flex flex-col"
+                  className="about-card p-[clamp(1rem,0.852rem+0.632vw,1.5rem)] flex flex-col"
                 >
                   <h2 className="text-[#1E1E42] font-semibold text-[clamp(2.75rem,2.454rem+1.265vw,3.75rem)] leading-[clamp(3.25rem,2.879rem+1.581vw,4.5rem)]">
                     {content.title}

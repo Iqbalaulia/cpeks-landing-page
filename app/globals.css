@@ -277,7 +277,7 @@ body {
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   border: 2px solid #ffffff;
-  height: 350px;
+  height: 380px !important;
 }
 
 select {
