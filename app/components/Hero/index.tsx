@@ -14,7 +14,7 @@ import {
   ThumbsUp,
   StampArrow,
 } from "@/public/icons/hero";
-import { CubeOne, CubeTwo, CubeThree, VioletBall } from "@/public/images";
+import { CubeOne, CubeTwo, CubeThree, VioletBall, Earth } from "@/public/images";
 import useWindowHeight from "@/app/hooks/useWindowHeight";
 import useWindowWidth from "@/app/hooks/useWindowWidth";
 import Loading from "../Loading";
@@ -99,7 +99,7 @@ const Hero = (props: Props) => {
                 <h1 className="flex gap-[clamp(0.75rem,0.602rem+0.632vw,1.25rem)] items-center max-w-fit">
                   ideas into
                   <Image
-                    src={Globe}
+                    src={Earth}
                     alt=""
                     width={90}
                     height={90}
