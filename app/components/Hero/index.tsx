@@ -103,7 +103,7 @@ const Hero = (props: Props) => {
                     alt=""
                     width={90}
                     height={90}
-                    className="w-[clamp(2.5rem,1.574rem+3.953vw,5.625rem)]"
+                    className="w-[clamp(2.5rem,1.574rem+3.953vw,5.625rem)] bg-transparent"
                   />
                 </h1>
                 <h1 className="text-primary-purple max-w-fit">
