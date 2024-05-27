@@ -9,7 +9,7 @@ import Third from "./third-row.jpg";
 import Fourth from "./fourth-row.jpg";
 import Fifth from "./fifth-row.jpg";
 import Sixth from "./sixth-row.jpg";
-import Earth from "./earth_rotation-min.gif";
+import Earth from "./earth_rotate.gif";
 
 export {
   Logo,
