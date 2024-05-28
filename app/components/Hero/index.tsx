@@ -46,6 +46,7 @@ const Hero = (props: Props) => {
   const [loading, setLoading] = useState(true);
   const [showViolet, setShowViolet] = useState(true);
   const [isFlexWrap, setIsFlexWrap] = useState(false);
+  const [isSafariBrowser, setIsSafari] = useState(false);
   useEffect(() => {
 
     // Check user agent to determine browser
@@ -55,6 +56,7 @@ const Hero = (props: Props) => {
     // Check if user is using Safari
     const isSafari = userAgent.includes('Safari') && !userAgent.includes('Chrome');
     console.log('Is Safari:', isSafari);
+    setIsSafari(isSafari)
 
     if (windowHeight) {
       setLoading(false);
@@ -108,7 +110,7 @@ const Hero = (props: Props) => {
                 <h1 className="flex gap-[clamp(0.75rem,0.602rem+0.632vw,1.25rem)] items-center max-w-fit">
                   ideas into
                   <Image
-                    src={EarthPNG}
+                    src={isSafariBrowser ? EarthPNG : Earth}
                     alt=""
                     width={90}
                     height={90}
