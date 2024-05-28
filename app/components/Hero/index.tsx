@@ -14,7 +14,7 @@ import {
   ThumbsUp,
   StampArrow,
 } from "@/public/icons/hero";
-import { CubeOne, CubeTwo, CubeThree, VioletBall, Earth,EarthAvif } from "@/public/images";
+import { CubeOne, CubeTwo, CubeThree, VioletBall, Earth, EarthPNG } from "@/public/images";
 import useWindowHeight from "@/app/hooks/useWindowHeight";
 import useWindowWidth from "@/app/hooks/useWindowWidth";
 import Loading from "../Loading";
@@ -100,7 +100,7 @@ const Hero = (props: Props) => {
                 <h1 className="flex gap-[clamp(0.75rem,0.602rem+0.632vw,1.25rem)] items-center max-w-fit">
                   ideas into
                   <Image
-                    src={EarthAvif}
+                    src={EarthPNG}
                     alt=""
                     width={90}
                     height={90}
@@ -215,9 +215,8 @@ const Hero = (props: Props) => {
               </div>
             </div>
             <div
-              className={`${
-                showViolet ? "block" : "hidden"
-              } absolute -bottom-[-55px] translate-y-full left-[220px] 2xl:left-[430px]`}
+              className={`${showViolet ? "block" : "hidden"
+                } absolute -bottom-[-55px] translate-y-full left-[220px] 2xl:left-[430px]`}
             >
               <Image
                 alt="violet-ball"
