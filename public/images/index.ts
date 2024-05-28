@@ -10,6 +10,7 @@ import Fourth from "./fourth-row.jpg";
 import Fifth from "./fifth-row.jpg";
 import Sixth from "./sixth-row.jpg";
 import Earth from "./earth_rotate.gif";
+import EarthAvif from "./earth-rotate.avif";
 
 export {
   Logo,
@@ -23,5 +24,6 @@ export {
   Fourth,
   Fifth,
   Sixth,
-  Earth
+  Earth,
+  EarthAvif
 };
