@@ -99,7 +99,7 @@ const Hero = (props: Props) => {
                 <h1 className="flex gap-[clamp(0.75rem,0.602rem+0.632vw,1.25rem)] items-center max-w-fit">
                   ideas into
                   <Image
-                    src={Earth}
+                    src={'https://cpeks.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fearth_rotate.13c769e5.gif&w=256&q=75'}
                     alt=""
                     width={90}
                     height={90}
