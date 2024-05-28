@@ -102,7 +102,7 @@ const Hero = (props: Props) => {
                 <h1 className="flex gap-[clamp(0.75rem,0.602rem+0.632vw,1.25rem)] items-center max-w-fit">
                   ideas into
                   <Image
-                    src={window.navigator.userAgent.indexOf("Safari") !== -1 ? EarthAvif : Earth}
+                    src={EarthAvif}
                     alt=""
                     width={90}
                     height={90}
