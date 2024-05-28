@@ -48,7 +48,7 @@ const Hero = (props: Props) => {
   const [isFlexWrap, setIsFlexWrap] = useState(false);
   useEffect(() => {
 
-    console.log(window.navigator.userAgent.indexOf("Safari") !== -1)
+    console.log(window.navigator.userAgent.indexOf("Safari") !== -1 ? "Use Safari": "Not Safari")
 
     if (windowHeight) {
       setLoading(false);
