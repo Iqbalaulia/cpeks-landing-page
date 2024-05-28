@@ -10,7 +10,7 @@ import Fourth from "./fourth-row.jpg";
 import Fifth from "./fifth-row.jpg";
 import Sixth from "./sixth-row.jpg";
 import Earth from "./earth_rotate.gif";
-import EarthPNG from "./Rotating_earth_animated_transparent.gif";
+import EarthPNG from "./earth-png-transparant.png";
 import EarthV2 from "./earth-rotate-v2.gif";
 
 export {
