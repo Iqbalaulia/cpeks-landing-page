@@ -47,6 +47,9 @@ const Hero = (props: Props) => {
   const [showViolet, setShowViolet] = useState(true);
   const [isFlexWrap, setIsFlexWrap] = useState(false);
   useEffect(() => {
+
+    console.log(window.navigator.userAgent)
+
     if (windowHeight) {
       setLoading(false);
     }
